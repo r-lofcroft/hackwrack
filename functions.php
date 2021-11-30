@@ -1,5 +1,26 @@
 <?php
 
+function hackwrackThemeSupport()
+{
+  //Adds dynamic title support
+  add_theme_support('title-tag');
+  add_theme_support('custom-logo');
+  add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'hackwrackThemeSupport');
+
+function hackwrackMenus()
+{
+
+  $locations = array(
+    'primary' => "Desktop Primary Left Sidebar",
+    'footer' => "Footer Menu Items"
+  );
+  register_nav_menus($locations);
+}
+add_action('init', 'hackwrackMenus');
+
+
 function hackwrackRegisterStyles()
 {
   // Version variable
@@ -20,3 +41,32 @@ function hackwrackRegisterScripts()
   wp_enqueue_script('hackwrack-main', get_template_directory_uri() . "/assets/js/main.js", array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'hackwrackRegisterScripts');
+
+
+function hackwrackWidgetAreas()
+{
+
+  register_sidebar(
+    array(
+      'before_title' => '<h2>',
+      'after_title' => '</h2>',
+      'before_widget' => '',
+      'after_widget' => '',
+      'name' => 'Sidebar Area',
+      'id' => 'sidebar-1',
+      'description' => 'Sidebar Widget Area'
+    )
+  );
+  register_sidebar(
+    array(
+      'before_title' => '',
+      'after_title' => '',
+      'before_widget' => '',
+      'after_widget' => '',
+      'name' => 'Footer Area',
+      'id' => 'footer-1',
+      'description' => 'Footer Widget Area'
+    )
+  );
+}
+add_action('widgets_init', 'hackwrackWidgetAreas');
