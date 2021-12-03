@@ -9,5 +9,12 @@ Author URI: https://www.linkedin.com/in/robin-williscroft/
 */
 
 body {
-  background-color: hotpink;
+  font-family: Arial, sans-serif;
+
+  background-color: white;
+  color: #222222;
+  margin: 15em;
+}
+article a {
+  color: black;
 }
