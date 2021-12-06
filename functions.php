@@ -68,3 +68,4 @@ function hackwrackWidgetAreas()
   );
 }
 add_action('widgets_init', 'hackwrackWidgetAreas');
+
