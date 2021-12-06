@@ -130,3 +130,121 @@ a:hover {
   color: #222222;
   margin: 15em;
 }
+
+/* CSS SETTINGS FOR CONTACT */
+.contactform {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: lightgrey;
+  color: white;
+  border-radius: 5px;
+}
+
+.form-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin-left: 20rem;
+  margin-top: 2rem;
+}
+
+.contactitem {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit {
+  background-color: #ff6b00;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  margin-left: 17rem;
+}
+
+.agreestatement {
+  float: left;
+  height: 5px;
+  width: 5px;
+  border: 1px solid black;
+  margin-right: 0.2rem;
+}
+.agreestatement1 {
+  font-size: 0.4rem;
+  float: left;
+}
+
+/* CSS SETTINGS FOR CONTACT2 */
+
+.contactform {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: lightgrey;
+  color: white;
+  border-radius: 5px;
+}
+
+.form-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin-left: 20rem;
+  margin-top: 2rem;
+}
+
+.contactstatement {
+  margin-left: 20rem;
+}
+.agreestatement {
+  float: left;
+  height: 5px;
+  width: 5px;
+  border: 1px solid black;
+  margin-right: 0.2rem;
+}
+.agreestatement1 {
+  font-size: 0.4rem;
+  float: left;
+}
+
+.contact {
+  margin-left: 30rem;
+}
+#submit1 {
+  background-color: #ff6b00;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  margin-left: 8rem;
+}
+
+.form-container1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin-left: 30rem;
+  margin-top: 2rem;
+}
+
+.contactform1 {
+  padding: 12px 30px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: lightgrey;
+  color: white;
+  border-radius: 5px;
+}
