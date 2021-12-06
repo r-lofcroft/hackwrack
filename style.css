@@ -59,10 +59,8 @@ a:hover {
 
 .contact-button a:hover {
   background-color: #ff6b00;
-  color: white
+  color: white;
 }
-
-
 
 /* footer */
 /* ladda ner pluginet widget options och sätt in text fields på varje widget area */
@@ -123,4 +121,12 @@ a:hover {
 .textwidget {
   max-width: 450px;
   line-height: 1.5rem;
+  font-family: Arial, sans-serif;
+
+  background-color: white;
+  color: #222222;
+  margin: 15em;
+}
+article a {
+  color: black;
 }

@@ -23,7 +23,7 @@
 <body>
 
   <header class="header text-center">
-   
+
 
     <nav class="navbar">
 
@@ -36,7 +36,7 @@
         }
         ?>
         <div>
-        <img class="logo" src="<?php echo $logo[0] ?>" alt="logo" >
+          <img class="logo" src="<?php echo $logo[0] ?>" alt="logo">
         </div>
         <?php
         wp_nav_menu(
@@ -45,7 +45,7 @@
             'container' => '',
             'theme_location' => 'primary',
             'items_wrap' => '<div class="navbar-nav"><ul id="nav-links">%3$s</ul></div>',
-            
+
           )
         );
         ?>
