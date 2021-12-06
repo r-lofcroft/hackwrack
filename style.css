@@ -12,6 +12,9 @@ Author URI: https://www.linkedin.com/in/robin-williscroft/
   margin: 0;
   padding: 0;
 }
+article a {
+  color: black;
+}
 
 body {
   background-color: whitesmoke;
@@ -126,7 +129,4 @@ a:hover {
   background-color: white;
   color: #222222;
   margin: 15em;
-}
-article a {
-  color: black;
 }
