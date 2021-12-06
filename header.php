@@ -36,7 +36,9 @@
         }
         ?>
         <div>
-          <img class="logo" src="<?php echo $logo[0] ?>" alt="logo">
+          <a href="<?php echo home_url(); ?>">
+            <img class="logo" src="<?php echo $logo[0] ?>" alt="logo">
+          </a>
         </div>
         <?php
         wp_nav_menu(
@@ -56,7 +58,7 @@
       dynamic_sidebar('sidebar-1');
 
       ?>
-      
+
 
 
     </nav>
