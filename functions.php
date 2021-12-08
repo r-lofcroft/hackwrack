@@ -27,7 +27,7 @@ function hackwrackRegisterStyles()
   // Version variable
   $version = wp_get_theme()->get('Version');
 
-  wp_enqueue_style('hackwrack-style', get_template_directory_uri() . "/style.css", array(), $version, 'all');
+  wp_enqueue_style('hackwrack-style', get_template_directory_uri() . "/style.css");
 }
 add_action('wp_enqueue_scripts', 'hackwrackRegisterStyles');
 
@@ -101,3 +101,45 @@ register_sidebar( array(
 }
 add_action('widgets_init', 'hackwrackWidgetAreas');
 
+function list_cases() {
+  $query = new WP_Query( array( 
+      'category_name' => 'Cases', 
+      'posts_per_page' => 4
+  ) ); 
+  if ( $query->have_posts() ) {
+    $string .= '<div class="customers-items">';
+    while ( $query->have_posts() ) {
+      $query->the_post();
+      $string .= '<div class="customer-item"><a href="'.get_the_permalink().'">';
+      $string .= '<div class="customer-item-img">';
+      $string .= '<img src="'.get_field('case_image').'" alt="Customer" width="200px">';
+      $string .= '</div>';
+      $string .= '<div class="customer-item-desc"><h3>'. get_field('case_name') .'</h3><p>'.get_field('case_desc').'</p></div>';
+      $string .= '</a></div>';
+    }
+  } 
+  $string .= '</div>';
+  return $string;
+  wp_reset_postdata();
+}
+add_shortcode('show_cases', 'list_cases');
+
+function list_stories() {
+  $query = new WP_Query( array( 
+      'category_name' => 'Stories', 
+      'posts_per_page' => 2
+  ) ); 
+  if ( $query->have_posts() ) {
+    $string .= '<div class="stories-items">';
+    while ( $query->have_posts() ) {
+    $query->the_post();
+      $string .= '<div class="stories-item" style="background: linear-gradient(0deg, rgba(250,250,250,1) 10%, rgba(255,255,255,0) 100%), url('.get_field('story_image').')"><a href="'.get_the_permalink().'">';
+      $string .= '<div class="stories-item-desc"><h3>' . get_field('story_name') .'</h3><p>'.get_field('story_desc').'</p></div>';
+      $string .= '</a></div>';
+    }
+  } 
+  $string .= '</div>';
+  return $string;
+  wp_reset_postdata();
+}
+add_shortcode('show_stories', 'list_stories');

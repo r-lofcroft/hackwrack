@@ -8,6 +8,8 @@ Author: Robin Williscroft
 Author URI: https://www.linkedin.com/in/robin-williscroft/
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +20,7 @@ article a {
 
 body {
   background-color: whitesmoke;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 #navigation {
@@ -37,7 +39,7 @@ body {
 a {
   text-decoration: none;
   color: whitesmoke;
-  font-family: "Share";
+  font-family: 'Share';
   padding: 0 0 0 2rem;
 }
 
@@ -82,7 +84,7 @@ a:hover {
 #menu-footer-menu li a {
   list-style: none;
   padding: 0;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: 'Arial Narrow', Arial, sans-serif;
   max-width: 450px;
   line-height: 1.5rem;
 }
@@ -117,7 +119,7 @@ a:hover {
 
 .widget-title {
   padding: 0 0 1rem 0;
-  font-family: "Share";
+  font-family: 'Share';
   color: #ff6b00;
 }
 
@@ -247,4 +249,199 @@ a:hover {
   background-color: lightgrey;
   color: white;
   border-radius: 5px;
+}
+
+/* Container */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.customers {
+  margin: 2rem 0;
+}
+
+.customers .section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.customers .section-title h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #ff6b00;
+}
+
+.customers .section-title span {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #959595;
+}
+
+.customers .customers-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .customers .customers-items {
+    flex-direction: column;
+  }
+}
+
+.customers .customers-items .customer-item {
+  flex: 1 0 21%;
+  background: #fff;
+  padding: 0.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .customers .customers-items {
+    flex-direction: column;
+  }
+}
+
+.customers .customers-items .customer-item a {
+  color: #222222 !important;
+}
+
+.customers .customers-items .customer-item .customer-item-img {
+  background: #fafafa;
+  margin-bottom: 1rem;
+  text-align: center;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.customers .customers-items .customer-item .customer-item-desc {
+  margin-bottom: 2rem;
+}
+
+.customers .customers-items .customer-item .customer-item-desc p {
+  color: #222222;
+}
+
+.stories {
+  margin: 6rem 0;
+}
+
+.stories .section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.stories .section-title h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #ff6b00;
+}
+
+.stories .section-title span {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #959595;
+}
+
+.stories .stories-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .stories .stories-items {
+    flex-direction: column;
+  }
+}
+
+.stories .stories-items .stories-item {
+  background-size: cover !important;
+  position: relative;
+  height: 400px;
+  flex: 1 0 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .stories .stories-items .stories-item {
+    flex: 1;
+    width: 100%;
+    min-height: 250px;
+    margin-bottom: 2rem;
+  }
+}
+
+.stories .stories-items .stories-item .stories-item-desc {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.stories .stories-items .stories-item .stories-item-desc h3 {
+  color: #ff6b00;
+}
+
+.stories .stories-items .stories-item .stories-item-desc p {
+  color: #5f5f5f;
+}
+
+.cases-contact {
+  background: #222222;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  margin-bottom: 6rem;
+}
+
+.cases-contact .cases-contact-text {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cases-contact .cases-contact-text h2 {
+  text-transform: uppercase;
+}
+
+.cases-contact .cases-contact-text p {
+  font-size: 1.2rem;
+}
+
+.cases-contact .cases-contact-btn .contact-btn {
+  background: #ff6b00;
+  padding: 0.6rem 1.5rem;
+  border-radius: 4px;
+}
+
+.cases-contact .cases-contact-btn .contact-btn:hover {
+  color: #ccc;
 }
