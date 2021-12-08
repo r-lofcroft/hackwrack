@@ -17,7 +17,9 @@ Author URI: https://www.linkedin.com/in/robin-williscroft/
 article a {
   color: black;
 }
-
+.content {
+  margin: 1rem 7rem 0 7rem;
+}
 body {
   background-color: whitesmoke;
   font-family: 'Arial Narrow', Arial, sans-serif;
@@ -127,14 +129,10 @@ a:hover {
   max-width: 450px;
   line-height: 1.5rem;
   font-family: Arial, sans-serif;
-
-  background-color: white;
-  color: #222222;
-  margin: 15em;
 }
 
 /* CSS SETTINGS FOR CONTACT */
-.contactform {
+/* .contactform {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -175,55 +173,27 @@ a:hover {
   width: 5px;
   border: 1px solid black;
   margin-right: 0.2rem;
-}
-.agreestatement1 {
-  font-size: 0.4rem;
-  float: left;
-}
+} */
 
 /* CSS SETTINGS FOR CONTACT2 */
 
-.contactform {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  background-color: lightgrey;
-  color: white;
-  border-radius: 5px;
-}
-
-.form-container {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
+/* .contactstatement {
   margin-left: 20rem;
-  margin-top: 2rem;
-}
+} */
 
-.contactstatement {
-  margin-left: 20rem;
-}
-.agreestatement {
-  float: left;
-  height: 5px;
-  width: 5px;
-  border: 1px solid black;
-  margin-right: 0.2rem;
-}
-.agreestatement1 {
-  font-size: 0.4rem;
-  float: left;
-}
-
-.contact {
+/* .contact {
   margin-left: 30rem;
+} */
+/* Styling for Contact Form 7 - div class */
+div.wpcf7 {
+  display: flex;
+  justify-content: center;
+  font-size: normal;
 }
 #submit1 {
   background-color: #ff6b00;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
   border: none;
   color: white;
