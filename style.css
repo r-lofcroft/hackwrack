@@ -306,26 +306,15 @@ div.wpcf7 {
   gap: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .customers .customers-items {
-    flex-direction: column;
-  }
-}
-
 .customers .customers-items .customer-item {
   flex: 1 0 21%;
   background: #fff;
   padding: 0.8rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .customers .customers-items {
-    flex-direction: column;
-  }
-}
-
 .customers .customers-items .customer-item a {
   color: #222222 !important;
+  text-decoration: none;
 }
 
 .customers .customers-items .customer-item .customer-item-img {
@@ -345,6 +334,9 @@ div.wpcf7 {
 
 .customers .customers-items .customer-item .customer-item-desc p {
   color: #222222;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding-top: 1rem;
 }
 
 .stories {
@@ -374,26 +366,11 @@ div.wpcf7 {
   gap: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .stories .stories-items {
-    flex-direction: column;
-  }
-}
-
 .stories .stories-items .stories-item {
   background-size: cover !important;
   position: relative;
   height: 400px;
   flex: 1 0 50%;
-}
-
-@media only screen and (max-width: 768px) {
-  .stories .stories-items .stories-item {
-    flex: 1;
-    width: 100%;
-    min-height: 250px;
-    margin-bottom: 2rem;
-  }
 }
 
 .stories .stories-items .stories-item .stories-item-desc {
@@ -443,4 +420,21 @@ div.wpcf7 {
 
 .cases-contact .cases-contact-btn .contact-btn:hover {
   color: #ccc;
+}
+@media only screen and (max-width: 768px) {
+  .stories .stories-items {
+    flex-direction: column;
+  }
+  .stories .stories-items .stories-item {
+    flex: 1;
+    width: 100%;
+    min-height: 250px;
+    margin-bottom: 2rem;
+  }
+  .customers .customers-items {
+    flex-direction: column;
+  }
+  .customers .customers-items {
+    flex-direction: column;
+  }
 }
