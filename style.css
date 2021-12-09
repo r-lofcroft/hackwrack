@@ -444,3 +444,22 @@ div.wpcf7 {
 .cases-contact .cases-contact-btn .contact-btn:hover {
   color: #ccc;
 }
+
+/* STYLES FOR ABOUT PAGE */
+.wp-block-media-text__media {
+  object-fit: scale-down;
+}
+
+.blogtext {
+  margin-left: 2em;
+  margin-top: 10rem;
+}
+
+.wp-block-query {
+  object-fit: scale-down;
+  margin-top: 4em;
+}
+
+.has-luminous-vivid-orange-color {
+  margin-bottom: 10em;
+}
