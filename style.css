@@ -8,7 +8,7 @@ Author: Robin Williscroft
 Author URI: https://www.linkedin.com/in/robin-williscroft/
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
   margin: 0;
@@ -18,11 +18,33 @@ article a {
   color: black;
 }
 .content {
-  margin: 1rem 7rem 0 7rem;
+  margin: 2.5rem 7rem 0 7rem;
+}
+.content p {
+  margin: 1rem 0 0 0;
 }
 body {
   background-color: whitesmoke;
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: "Share";
+}
+.landing-title {
+  padding-left: 1.875rem;
+}
+.landing-title-button {
+  padding: 0 0 2rem 1.875rem;
+}
+
+.banner .wp-block-buttons {
+  padding: 2rem 0 2rem 0;
+}
+.grid-style {
+  padding: 0rem;
+  max-width: 15rem;
+}
+
+.post-container {
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 #navigation {
@@ -38,10 +60,10 @@ body {
 }
 
 /* länkarna i naven */
-a {
+header a {
   text-decoration: none;
   color: whitesmoke;
-  font-family: 'Share';
+  font-family: "Share";
   padding: 0 0 0 2rem;
 }
 
@@ -75,6 +97,12 @@ a:hover {
 .list-inline-item a {
   color: white;
 }
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Share";
+  padding: 0 0 0 2rem;
+}
 
 #footer {
   background-color: #222222;
@@ -86,7 +114,7 @@ a:hover {
 #menu-footer-menu li a {
   list-style: none;
   padding: 0;
-  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   max-width: 450px;
   line-height: 1.5rem;
 }
@@ -121,7 +149,7 @@ a:hover {
 
 .widget-title {
   padding: 0 0 1rem 0;
-  font-family: 'Share';
+  font-family: "Share";
   color: #ff6b00;
 }
 
@@ -260,13 +288,13 @@ div.wpcf7 {
 }
 
 .customers .section-title h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   color: #ff6b00;
 }
 
 .customers .section-title span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   color: #959595;
 }
@@ -328,13 +356,13 @@ div.wpcf7 {
   margin-bottom: 2rem;
 }
 .stories .section-title h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   color: #ff6b00;
 }
 
 .stories .section-title span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   color: #959595;
 }
