@@ -302,7 +302,7 @@ div.wpcf7 {
 .customers .customers-items {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   gap: 2rem;
 }
 
@@ -332,10 +332,10 @@ div.wpcf7 {
   background: #fafafa;
   margin-bottom: 1rem;
   text-align: center;
-  height: 280px;
+  /* height: 280px; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   padding: 0 1rem;
 }
 
@@ -369,7 +369,7 @@ div.wpcf7 {
 
 .stories .stories-items {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 2rem;
 }
@@ -438,6 +438,7 @@ div.wpcf7 {
   background: #ff6b00;
   padding: 0.6rem 1.5rem;
   border-radius: 4px;
+  color: white;
 }
 
 .cases-contact .cases-contact-btn .contact-btn:hover {
