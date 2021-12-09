@@ -14,6 +14,9 @@ Author URI: https://www.linkedin.com/in/robin-williscroft/
   margin: 0;
   padding: 0;
 }
+article {
+  padding: 0 15rem 0 15rem;
+}
 article a {
   color: black;
 }
@@ -38,19 +41,24 @@ body {
   padding: 2rem 0 2rem 0;
 }
 .grid-style {
-  padding: 0rem;
-  max-width: 15rem;
+  padding: 0rem 15rem 0 0;
+}
+
+.project-image-thumb {
+  text-align: center;
+  padding: 0.5rem;
 }
 
 .post-container {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
 }
 
 #navigation {
   background-color: #222222;
   display: flex;
   justify-content: space-between;
+  padding: 0 5rem 0 5rem;
 }
 
 #nav-links {
@@ -108,7 +116,7 @@ footer a {
   background-color: #222222;
   color: whitesmoke;
   display: flex;
-  padding: 3rem 7rem;
+  padding: 3rem 20rem;
 }
 
 #menu-footer-menu li a {
@@ -445,15 +453,18 @@ div.wpcf7 {
 }
 
 .blogtext {
-  margin-left: 2em;
-  margin-top: 10rem;
+  /* margin-left: 2em; */
+  margin-top: 8rem;
 }
 
 .wp-block-query {
   object-fit: scale-down;
-  margin-top: 4em;
 }
 
 .has-luminous-vivid-orange-color {
-  margin-bottom: 10em;
+  margin-bottom: 5em;
+}
+
+.wp-block-post-template.is-flex-container li {
+  margin-right: 0;
 }
