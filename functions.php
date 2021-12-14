@@ -52,6 +52,7 @@ function hackwrackRegisterScripts()
 add_action('wp_enqueue_scripts', 'hackwrackRegisterScripts');
 
 
+
 function hackwrackWidgetAreas()
 {
 
