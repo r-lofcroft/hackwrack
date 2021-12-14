@@ -8,7 +8,7 @@ Author: Robin Williscroft
 Author URI: https://www.linkedin.com/in/robin-williscroft/
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
   margin: 0;
@@ -25,7 +25,7 @@ article a {
 }
 body {
   background-color: whitesmoke;
-  font-family: "Share";
+  font-family: 'Share';
 }
 .landing-title {
   padding-left: 1.875rem;
@@ -63,7 +63,7 @@ body {
 header a {
   text-decoration: none;
   color: whitesmoke;
-  font-family: "Share";
+  font-family: 'Share';
   padding: 0 0 0 2rem;
 }
 
@@ -100,7 +100,7 @@ a:hover {
 footer a {
   text-decoration: none;
   color: whitesmoke;
-  font-family: "Share";
+  font-family: 'Share';
   padding: 0 0 0 2rem;
 }
 
@@ -114,7 +114,7 @@ footer a {
 #menu-footer-menu li a {
   list-style: none;
   padding: 0;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-family: 'Arial Narrow', Arial, sans-serif;
   max-width: 450px;
   line-height: 1.5rem;
 }
@@ -149,7 +149,7 @@ footer a {
 
 .widget-title {
   padding: 0 0 1rem 0;
-  font-family: "Share";
+  font-family: 'Share';
   color: #ff6b00;
 }
 
@@ -288,13 +288,13 @@ div.wpcf7 {
 }
 
 .customers .section-title h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   color: #ff6b00;
 }
 
 .customers .section-title span {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   color: #959595;
 }
@@ -356,13 +356,13 @@ div.wpcf7 {
   margin-bottom: 2rem;
 }
 .stories .section-title h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   color: #ff6b00;
 }
 
 .stories .section-title span {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   color: #959595;
 }
@@ -443,4 +443,54 @@ div.wpcf7 {
 
 .cases-contact .cases-contact-btn .contact-btn:hover {
   color: #ccc;
+}
+
+.blog-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .blog-container {
+    width: 750px;
+  }
+}
+
+.blog-header h1 {
+  color: #222;
+  font-size: 1.8rem;
+}
+
+.blog-header span {
+  color: #7b7b7b;
+}
+
+.blog-header ul {
+  list-style: none;
+  margin: 0.4rem 0 0 0;
+}
+
+.blog-header ul a {
+  text-decoration: none;
+  color: #ff6b00;
+}
+
+.blog-content p {
+  color: #7b7b7b;
+}
+
+.blog-content {
+  margin: 2.5rem 0 5rem 0;
+}
+
+.blog-content h2 {
+  margin: 3rem 0 -0.5rem 0;
+  color: #222;
 }
