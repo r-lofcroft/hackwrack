@@ -14,6 +14,9 @@ Author URI: https://www.linkedin.com/in/robin-williscroft/
   margin: 0;
   padding: 0;
 }
+article {
+  padding: 0 15rem 0 15rem;
+}
 article a {
   color: black;
 }
@@ -38,19 +41,24 @@ body {
   padding: 2rem 0 2rem 0;
 }
 .grid-style {
-  padding: 0rem;
-  max-width: 15rem;
+  padding: 0rem 15rem 0 0;
+}
+
+.project-image-thumb {
+  text-align: center;
+  padding: 0.5rem;
 }
 
 .post-container {
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
 }
 
 #navigation {
   background-color: #222222;
   display: flex;
   justify-content: space-between;
+  padding: 0 5rem 0 5rem;
 }
 
 #nav-links {
@@ -108,7 +116,7 @@ footer a {
   background-color: #222222;
   color: whitesmoke;
   display: flex;
-  padding: 3rem 7rem;
+  padding: 3rem 20rem;
 }
 
 #menu-footer-menu li a {
@@ -306,26 +314,15 @@ div.wpcf7 {
   gap: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .customers .customers-items {
-    flex-direction: column;
-  }
-}
-
 .customers .customers-items .customer-item {
   flex: 1 0 21%;
   background: #fff;
   padding: 0.8rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .customers .customers-items {
-    flex-direction: column;
-  }
-}
-
 .customers .customers-items .customer-item a {
   color: #222222 !important;
+  text-decoration: none;
 }
 
 .customers .customers-items .customer-item .customer-item-img {
@@ -345,6 +342,9 @@ div.wpcf7 {
 
 .customers .customers-items .customer-item .customer-item-desc p {
   color: #222222;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding-top: 1rem;
 }
 
 .stories {
@@ -374,26 +374,11 @@ div.wpcf7 {
   gap: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .stories .stories-items {
-    flex-direction: column;
-  }
-}
-
 .stories .stories-items .stories-item {
   background-size: cover !important;
   position: relative;
   height: 400px;
   flex: 1 0 50%;
-}
-
-@media only screen and (max-width: 768px) {
-  .stories .stories-items .stories-item {
-    flex: 1;
-    width: 100%;
-    min-height: 250px;
-    margin-bottom: 2rem;
-  }
 }
 
 .stories .stories-items .stories-item .stories-item-desc {
@@ -444,6 +429,7 @@ div.wpcf7 {
 .cases-contact .cases-contact-btn .contact-btn:hover {
   color: #ccc;
 }
+<<<<<<< HEAD
 
 .blog-container {
   padding-right: 15px;
@@ -493,4 +479,44 @@ div.wpcf7 {
 .blog-content h2 {
   margin: 3rem 0 -0.5rem 0;
   color: #222;
+=======
+@media only screen and (max-width: 768px) {
+  .stories .stories-items {
+    flex-direction: column;
+  }
+  .stories .stories-items .stories-item {
+    flex: 1;
+    width: 100%;
+    min-height: 250px;
+    margin-bottom: 2rem;
+  }
+  .customers .customers-items {
+    flex-direction: column;
+  }
+  .customers .customers-items {
+    flex-direction: column;
+  }
+}
+
+/* STYLES FOR ABOUT PAGE */
+.wp-block-media-text__media {
+  object-fit: scale-down;
+}
+
+.blogtext {
+  /* margin-left: 2em; */
+  margin-top: 8rem;
+}
+
+.wp-block-query {
+  object-fit: scale-down;
+}
+
+.has-luminous-vivid-orange-color {
+  margin-bottom: 5em;
+}
+
+.wp-block-post-template.is-flex-container li {
+  margin-right: 0;
+>>>>>>> dfb55488dd3ef0c04a443eb6e038d5744e26d824
 }
