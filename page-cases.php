@@ -2,7 +2,7 @@
 /* Template Name: Cases */
 get_header(); ?>
 
-<div class="container">
+<div class="container-cases">
     <div class="customers">
         <div class="section-title">
             <span>Examples</span>
