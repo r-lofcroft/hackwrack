@@ -532,3 +532,69 @@ div.wpcf7 {
 .wp-block-post-template.is-flex-container li {
   margin-right: 0;
 }
+/* Work with us page  */
+
+.wp-block-cover__inner-container p {
+  font-family: "Share";
+}
+
+.wp-block-group__inner-container p {
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.work-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 3rem 0;
+}
+
+.work-item {
+  display: flex;
+  box-shadow: 0 6px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 1rem;
+  /* min-width: 60%; */
+}
+
+.work-item .work-item-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 60%; */
+}
+
+.work-item-content h3 {
+  font-family: "Share";
+  font-size: 25px;
+}
+
+.work-item-content p {
+  font-size: 1rem;
+}
+
+.work-item-content button {
+  padding: 0.5rem 1.5rem;
+  background-color: #ff6b00;
+  color: whitesmoke;
+  border-radius: 4px;
+  border: none;
+  font-family: "Share";
+  float: right;
+  font-size: 16px;
+}
+
+.work-items .work-items-ingress {
+  /* min-width: 60%; */
+  padding: 2rem 0;
+}
+
+.work-items .work-items-ingress h2 {
+  font-family: "Share";
+  padding: 0 0 1rem 0;
+}
+
+.work-items .work-items-ingress p {
+  font-size: 1.2rem;
+}
