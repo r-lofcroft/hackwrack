@@ -14,16 +14,16 @@
         <div class="meta">
           <span class="date">
             <?php the_date(); ?></span>
-            </div>
-            
-          
-        
+        </div>
+
+
+
         <div class="intro">
           <?php
           the_excerpt();
           ?></div>
-          
-        <a class="more-link" href="<?php the_permalink() ?>">Read more &rarr;</a>
+
+        <a class="more-link" href="<?php the_permalink() ?>">Läs mer &rarr;</a>
       </div>
     </div>
   </div>
