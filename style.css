@@ -30,7 +30,11 @@ body {
   background-color: whitesmoke;
   font-family: "Share";
 }
-.landing-title {
+.landing-title-top {
+  margin-top: 6rem;
+  padding-left: 1.875rem;
+}
+.landing-title-bottom {
   padding-left: 1.875rem;
 }
 .landing-title-button {
@@ -319,7 +323,7 @@ div.wpcf7 {
 }
 
 /* Container */
-.container {
+.container-cases {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -327,22 +331,22 @@ div.wpcf7 {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .container-cases {
     padding: 0;
   }
 }
 @media (min-width: 768px) {
-  .container {
+  .container-cases {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container-cases {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container-cases {
     width: 1170px;
   }
 }
@@ -644,4 +648,8 @@ div.wpcf7 {
 
 .work-items .work-items-ingress p {
   font-size: 1.2rem;
+}
+
+.work-banner * {
+  max-width: 100%;
 }
