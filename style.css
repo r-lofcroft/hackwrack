@@ -62,10 +62,57 @@ body {
 }
 /* pagination for archive && archive styling */
 .media {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  background-color: rgb(221, 221, 221);
-  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  margin: 2rem 12rem 2rem 12rem;
+}
+
+.media img {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.media .media-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-decoration: none;
+  margin: 0 0 0 1rem;
+}
+
+.media-body .intro {
+  max-width: 500px;
+  font-family: "Arial Narrow";
+}
+
+.comment span {
+  text-decoration: none;
+}
+
+.media-body .post-categories li {
+  list-style: none;
+  text-decoration: none !important;
+  color: #ff6b00;
+}
+
+.media-body .post-categories a {
+  text-decoration: none;
+  color: #ff6b00;
+}
+
+.comment a {
+  text-decoration: none;
+}
+
+.more-link {
+  text-decoration: none;
+}
+
+.title a {
+  text-decoration: none;
 }
 
 .nav-links {

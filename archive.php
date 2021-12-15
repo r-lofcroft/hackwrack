@@ -3,7 +3,7 @@ get_header()
 ?>
 
 
-<article class="content>
+<article class="content">
 
   <?php
   if (have_posts()) {
